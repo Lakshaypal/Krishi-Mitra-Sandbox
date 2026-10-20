@@ -1,4 +1,4 @@
-# Krishi Mitra — Hobby Agriculture Dashboard
+# Krishi Mitra Sandbox — Hobby Agriculture Dashboard
 
 A personal hobby project exploring a React interface for an agricultural assistant, with crop diagnosis, local sourcing, market prices, crop planning and government-scheme exploration.
 
@@ -18,8 +18,8 @@ A personal hobby project exploring a React interface for an agricultural assista
 Use Node.js 20+ and npm:
 
 ```sh
-git clone https://github.com/Lakshaypal/hobby-agri-dashboard.git
-cd hobby-agri-dashboard
+git clone https://github.com/Lakshaypal/Krishi-Mitra-Sandbox.git
+cd Krishi-Mitra-Sandbox
 npm ci
 npm run dev
 ```
