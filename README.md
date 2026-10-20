@@ -1,48 +1,47 @@
 # Krishi Mitra
 
-## Project info
+A React interface prototype for an agricultural assistant, with crop diagnosis, local sourcing, market prices, crop planning and government-scheme exploration.
 
-This project is a React application built with Vite, TypeScript, shadcn-ui, and Tailwind CSS.
+## Interface
 
-## Getting Started
+- Crop-image selection and a sample diagnosis report.
+- Agricultural-supply search and example store cards.
+- Market-price charts and example sell/wait recommendations.
+- Crop-strategy forms and a sample investment/allocation plan.
+- Searchable scheme cards and details.
+- An animated Three.js background and responsive navigation.
 
-To get started with development:
+**Status:** frontend demonstration. Diagnosis, stores, prices and crop plans are populated from mock data in `src/pages/`; the simulated agent-status display is also presentation logic. This repository does not contain a diagnostic model, live market feed or agent backend. Displayed confidence scores, returns and scheme details are illustrative sample content.
 
-1.  Clone the repository:
-    ```sh
-    git clone <YOUR_GIT_URL>
-    ```
+## Run locally
 
-2.  Install dependencies:
-    ```sh
-    npm install
-    ```
+Use Node.js 20+ and npm:
 
-3.  Start the development server:
-    ```sh
-    npm run dev
-    ```
+```sh
+git clone https://github.com/Lakshaypal/Krishi-mitra.git
+cd Krishi-mitra
+npm ci
+npm run dev
+```
 
-## Building for Production
-
-To build the application for production:
+Open the URL printed by Vite.
 
 ```sh
 npm run build
+npm run preview
+npm run lint
 ```
 
-## Deployment
+Production output is written to `dist/`. Hosting must send browser routes such as `/diagnosis` and `/market` to `index.html`.
 
-This project is ready to be deployed on Vercel.
+## Structure
 
-1.  Push your changes to a GitHub repository.
-2.  Import the project in Vercel.
-3.  Vercel will automatically detect the Vite configuration and deploy.
+```text
+src/App.tsx                 Routes and application shell
+src/pages/                  Agricultural-assistant screens and sample data
+src/components/layout/      Navigation and shared layout
+src/components/3d/          Background scene
+src/components/ui/          Interface primitives and status display
+```
 
-## Technologies
-
-- vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Built with React 18, TypeScript, Vite, Tailwind CSS, shadcn/Radix primitives, Framer Motion and Three.js.
